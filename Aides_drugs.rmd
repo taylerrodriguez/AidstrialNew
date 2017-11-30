@@ -1,0 +1,59 @@
+---
+title: "Aides Tests"
+author: "Dr K"
+date: "May 24, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+require(tigerstats)
+require(dplyr)
+Scarolina<-read.csv(file="south_carolina_aides.csv",header=TRUE)
+korea<-read.csv(file="korea_aides.csv",header=TRUE)
+cenAfrica<-read.csv(file="central_africa_aides.csv",header=TRUE)
+```
+
+#Instructions
+
+Three new preventative aides drugs were tested in clinical trials in 2015. The trial designs were modeled after the famous RV_144 Aides Trials in Tailand in 2009.  Analyze and report on the apparent effectiveness of the three different drugs. Does sex of the participant seem to be a factor for any of the drugs?
+
+
+# South Carolina
+
+We will subset the data by sex to see if the drug is sex specific.
+
+
+# Central Africa
+They had two different drugs aganist aids one was a placebo and the other was a vaccine against AIDS.
+
+
+```{r}
+barchartGC(africatab,type="percent", main="all")
+
+```
+In this barchart here is both female and male who got injected with either the placebo or the vaccine. It doesnt really look like the vaccine worked maybe about 10% but that could just be chance.
+```{r}
+barchartGC(africatabF,type="percent", main="africa female")
+```
+Above is the barchart for just the females, now this chart looks the same as the barchart for all, but it has a slight drop in it. Now again it doesnt look like there is much of a difference. To me it doesn't seem like the drug is working too well. If it was than it would have been a huge drop. 
+```{r}
+barchartGC(africatabM, type="percent", main="africa male")
+```
+In this barchart above its just the men who got either the placebo or the vaccine, in this chart above it barely dropped. It didn't look like it had any effect at all. 
+
+
+
+We will subset the data by sex to see if the drug is sex specific.
+
+
+
+# Korea
+
+We will subset the data by sex to see if the drug is sex specific.
+
+
+
+
+
+
