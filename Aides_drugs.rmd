@@ -12,6 +12,7 @@ require(dplyr)
 Scarolina<-read.csv(file="south_carolina_aides.csv",header=TRUE)
 korea<-read.csv(file="korea_aides.csv",header=TRUE)
 cenAfrica<-read.csv(file="central_africa_aides.csv",header=TRUE)
+source("makingRestOfData.R")
 ```
 
 #Instructions
@@ -24,9 +25,13 @@ Introduction:
 They injected a large group of people with a vaccine against AIDS, and a saline soultion which was the placebo. They than retested these people to see who contracted the AIDS virus. This particular test took place in South Carolina.
 
 ```{r}
-barchartGC(scarolinatab, type="percent", main="all")
+barchartGC(Scarolinatabs, type="percent", main="all")
 ```
 Above is a barchart of the people who had the drug and the placebo. We can see that a very slight difference in the people who took the vaccine rather than the placebo. However the difference isn't a high enough amount to decide whether these people got AIDS by chance or if the vaccine really worked.
+```{r}
+barchartGC(ScarolinatabsF, type="percent", main= "Scarolina Female")
+
+```
 
 
 # Central Africa
@@ -42,7 +47,7 @@ barchartGC(africatab,type="percent", main="all")
 ```
 In this barchart here is both female and male who got injected with either the placebo or the vaccine. It doesnt really look like the vaccine worked maybe about 10% but that could just be chance.
 ```{r}
-barchartGC(africatabF,type="percent", main="africa female")
+
 ```
 Above is the barchart for just the females, now this chart looks the same as the barchart for all, but it has a slight drop in it. Now again it doesnt look like there is much of a difference. To me it doesn't seem like the drug is working too well. If it was than it would have been a huge drop. 
 ```{r}
@@ -61,10 +66,19 @@ Intorduction:
 They injected a large group of people with a vaccine against AIDS, and a saline soultion which was the placebo. They than retested these people to see who contracted the AIDS virus. This particular test took place in Korea.
 
 ```{r}
-barchartGC(koreatab, type="percent", main= "all")
+barchartGC(koreatabs, type="percent", main="all korea")
 ```
 Above is a barchart of the people who had the drug and the placebo. We can see that a significant drop in the people who got AIDS and had the vaccine, it seems like the vaccine was working. As you can see with the placebo it looks about the same. 
 
+```{r}
+barchartGC(koreatabsM, type="percent", main="korea Males")
+```
+
+Above is the barchart of just the males that were in the group. 
+
+```{r}
+
+```
 
 
 
