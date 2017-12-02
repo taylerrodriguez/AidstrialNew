@@ -20,12 +20,20 @@ Three new preventative aides drugs were tested in clinical trials in 2015. The t
 
 
 # South Carolina
+Introduction:
+They injected a large group of people with a vaccine against AIDS, and a saline soultion which was the placebo. They than retested these people to see who contracted the AIDS virus. This particular test took place in South Carolina.
 
-We will subset the data by sex to see if the drug is sex specific.
+```{r}
+barchartGC(scarolinatab, type="percent", main="all")
+```
+Above is a barchart of the people who had the drug and the placebo. We can see that a very slight difference in the people who took the vaccine rather than the placebo. However the difference isn't a high enough amount to decide whether these people got AIDS by chance or if the vaccine really worked.
 
 
 # Central Africa
-They had two different drugs aganist aids one was a placebo and the other was a vaccine against AIDS.
+Introduction:
+
+They injected a large group of people with a vaccine against AIDS, and a saline soultion which was the placebo. They than retested these people to see who contracted the AIDS virus. This particular test took place in Central Africa.
+
 
 
 ```{r}
@@ -44,13 +52,20 @@ In this barchart above its just the men who got either the placebo or the vaccin
 
 
 
-We will subset the data by sex to see if the drug is sex specific.
+
 
 
 
 # Korea
+Intorduction:
+They injected a large group of people with a vaccine against AIDS, and a saline soultion which was the placebo. They than retested these people to see who contracted the AIDS virus. This particular test took place in Korea.
 
-We will subset the data by sex to see if the drug is sex specific.
+```{r}
+barchartGC(koreatab, type="percent", main= "all")
+```
+Above is a barchart of the people who had the drug and the placebo. We can see that a significant drop in the people who got AIDS and had the vaccine, it seems like the vaccine was working. As you can see with the placebo it looks about the same. 
+
+
 
 
 
