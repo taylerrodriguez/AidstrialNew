@@ -23,7 +23,7 @@ Three new preventative aides drugs were tested in clinical trials in 2015. The t
 # South Carolina
 Introduction:
 They injected a large group of people with a vaccine against AIDS, and a saline soultion which was the placebo. They than retested these people to see who contracted the AIDS virus. This particular test took place in South Carolina.
-
+Numerical Results:
 ```{r}
 barchartGC(Scarolinatabs, type="percent", main="all")
 ```
@@ -38,13 +38,24 @@ As you see in the barchart above it is just a chart of just the femmales. The fe
 barchartGC(ScarolinatabsM, type="percent", main= "Scarolina Male")
 ```
 In the barchart above it is just the males. Now in this one it looks a little wrong, it looks like the vaccines are working backwards. The vaccine doesn't look like it is working but the placebo looks like it is. The whole thing is just working backwards.
-
+Inferential Results:
+```{r}
+chisqtestGC(Scarolinatabs, graph = TRUE)
+```
+Above is the p value for Scarolina all. As you can see the p value for this is 0.849 which means that we accept this null. 
+```{r}
+chisqtestGC(ScarolinatabsM, graph = TRUE)
+```
+Above is the pValue for just the males, the p value is at 0.096 which is higher than the all. This means we accept the null and that there are a chance of us getting these numbers again.
+```{r}
+chisqtestGC(ScarolinatabsF, graph = TRUE)
+```
+Above is the p value for the females, this p value is at 0.026. This number is below 0.05 which means that we reject this number, the chances of getting this again is none. 
 # Central Africa
 Introduction:
-
 They injected a large group of people with a vaccine against AIDS, and a saline soultion which was the placebo. They than retested these people to see who contracted the AIDS virus. This particular test took place in Central Africa.
 
-
+Numerical Results:
 
 ```{r}
 barchartGC(africatab,type="percent", main="all")
@@ -60,18 +71,26 @@ Above is the barchart for just the males. It doesn't look any different than the
 barchartGC(cenAfricatabsF, type="percent", main="africa Female")
 ```
 In the barchart above is just the females. It does look like there was a smaller drop in it. The vaccines went lower for female than just male. It seems to be just the female that reall got infected, however it could just be by luck. 
-
-
-
-
-
-
+Inferential results:
+```{r}
+chisqtestGC(cenAfricatab, graph = TRUE)
+```
+The P value above is for all of the cenAfirca males and females, the p value for this is 0.573, which means that there is a chance that these results will happen again are there.
+```{r}
+chisqtestGC(cenAfricatabsM, graph = TRUE)
+```
+The P-value above is just for the males, and the value is 1. This value tells us there is a high chance of them getting this number again. Which means that we accept the null.
+```{r}
+chisqtestGC(cenAfricatabsF, graph = TRUE)
+```
+The P value above is just for the females. The p value is at 0.50 which means that we accept the null. That there is a chance of getting this number. 
 
 
 # Korea
 Intorduction:
 They injected a large group of people with a vaccine against AIDS, and a saline soultion which was the placebo. They than retested these people to see who contracted the AIDS virus. This particular test took place in Korea.
 
+Numerical Results:
 ```{r}
 barchartGC(koreatabs, type="percent", main="all korea")
 ```
@@ -88,8 +107,22 @@ barchartGC(koreatabsF, type="percent", main="korea Females")
 ```
 In the barchart above it is just the females. Now again like we saw eariler the vaccine seems to be working backwards. The placebo looks like its the one that is working, its having the oppisite effect.
 
+Inferential Results:
+```{r}
+chisqtestGC(koreatabs, graph = TRUE)
+```
+The P-value represents the effectiveness of the group. The first Chi test that I did is for all of Korea male and female. The P- value represents the chance of us getting this number again. So it tells us whether it was by chance or by the product actually working. When we saw on the barcharts for Korea all it looked like there wasn't much of a difference. Here it says the P-value is 0.069 which tells us it is enough. That the number of getting this chance can happen again. 
 
+```{r}
+chisqtestGC(koreatabsM, graph = TRUE)
+```
+Above is the P value for the chances of getting the same numbers again for just the males P-Value is 0. Which tells us the chances of getting this again is none. When it told us that the vaccine worked for the men it was just by chance. Which means we reject this.
+```{r}
+chisqtestGC(koreatabsF, graph = TRUE)
+```
+Above is the P value for the chances of getting the same numbers again for just the females. The P-value for this is 0.06 which tels us that the chances of getting these numbers again is high enough to let us know it wasnt by chance.
 
+#Conclusion
 
 
 
