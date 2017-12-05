@@ -32,7 +32,12 @@ Above is a barchart of the people who had the drug and the placebo. We can see t
 barchartGC(ScarolinatabsF, type="percent", main= "Scarolina Female")
 
 ```
+As you see in the barchart above it is just a chart of just the femmales. The female chart looks way lower than the chart with both male and female, this tells us that there is something going right with the aids vaccine. The placebo doesn't look like it is making a difference. This barchart is realitively lower so that tells us that it isnt just by chance. That something is working. 
 
+```{r}
+barchartGC(ScarolinatabsM, type="percent", main= "Scarolina Male")
+```
+In the barchart above it is just the males. Now in this one it looks a little wrong, it looks like the vaccines are working backwards. The vaccine doesn't look like it is working but the placebo looks like it is. The whole thing is just working backwards.
 
 # Central Africa
 Introduction:
