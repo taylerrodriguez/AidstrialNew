@@ -52,13 +52,15 @@ barchartGC(africatab,type="percent", main="all")
 ```
 In this barchart here is both female and male who got injected with either the placebo or the vaccine. It doesnt really look like the vaccine worked maybe about 10% but that could just be chance.
 ```{r}
+barchartGC(cenAfricatabsM, type="percent", main="africa Male")
+```
+Above is the barchart for just the males. It doesn't look any different than the one for both females and males. It didn't seem to an affect on just the males.
 
-```
-Above is the barchart for just the females, now this chart looks the same as the barchart for all, but it has a slight drop in it. Now again it doesnt look like there is much of a difference. To me it doesn't seem like the drug is working too well. If it was than it would have been a huge drop. 
 ```{r}
-barchartGC(africatabM, type="percent", main="africa male")
+barchartGC(cenAfricatabsF, type="percent", main="africa Female")
 ```
-In this barchart above its just the men who got either the placebo or the vaccine, in this chart above it barely dropped. It didn't look like it had any effect at all. 
+In the barchart above is just the females. It does look like there was a smaller drop in it. The vaccines went lower for female than just male. It seems to be just the female that reall got infected, however it could just be by luck. 
+
 
 
 
@@ -79,12 +81,12 @@ Above is a barchart of the people who had the drug and the placebo. We can see t
 barchartGC(koreatabsM, type="percent", main="korea Males")
 ```
 
-Above is the barchart of just the males that were in the group. 
+Above is the barchart of just the males that were in the group.it looks smaller than when it was with both. Judging by this it looks like the vaccine is working with the males. For this you can tell it isn't just by chance because it is a huge difference.
 
 ```{r}
-
+barchartGC(koreatabsF, type="percent", main="korea Females")
 ```
-
+In the barchart above it is just the females. Now again like we saw eariler the vaccine seems to be working backwards. The placebo looks like its the one that is working, its having the oppisite effect.
 
 
 
